@@ -1,6 +1,6 @@
 # docker-compose-builds
 
-Docker compose self education maked repo
+Docker compose self education 
 
 ## Installation & Usage
 
