@@ -22,6 +22,9 @@ Check available ports on your local(in dev mode if :80 is already taken by anoth
 
 *Ports can be set in compose files and nginx configs
 
+# Domains
+Should be set in hosts file (for local development)
+
 ## Used technologies
 Express.js
 Node.js
