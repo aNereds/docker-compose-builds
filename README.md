@@ -12,6 +12,9 @@ docker-compose up --build - For Prod Mode Run
 OR
 
 docker-compose -f docker-compose.yml -f docker-compose.development.yml up --build - For Dev env/mode run
+
+Local domain will be: realworld-docker.loc
+Note: should be added to local hosts file.
 ```
 
 ```bash
