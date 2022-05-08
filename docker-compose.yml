@@ -40,7 +40,7 @@ services:
       - realworld-docker-network
 
   auth_db:
-    image: mongo:latest
+    image: mongo:5.0.8
     container_name: realworld-docker-auth-db
     volumes:
       - mongodb_auth:/data/db
@@ -48,7 +48,7 @@ services:
       - realworld-docker-network
 
   api_db:
-    image: mongo:latest
+    image: mongo:5.0.8
     container_name: realworld-docker-api-db
     volumes:
       - mongodb_api:/data/db
@@ -56,7 +56,7 @@ services:
       - realworld-docker-network
 
   nginx:
-    image: nginx:stable-alpine
+    image: nginx:1.21-alpine
     container_name: realworld-docker-nginx
     ports:
       - "80:80"
