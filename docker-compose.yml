@@ -42,6 +42,8 @@ services:
   auth_db:
     image: mongo:5.0.8
     container_name: realworld-docker-auth-db
+    ports:
+      - "27017:27017"
     volumes:
       - mongodb_auth:/data/db
     networks:
@@ -50,6 +52,8 @@ services:
   api_db:
     image: mongo:5.0.8
     container_name: realworld-docker-api-db
+    ports:
+      - "27018:27017"
     volumes:
       - mongodb_api:/data/db
     networks:
